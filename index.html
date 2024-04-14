@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myntra Clone</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bag.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!--<script src="https://kit.fontawesome.com/db29ae3746.js" crossorigin="anonymous"></script>-->
 </head>
@@ -44,14 +45,15 @@
                 <!--<i class="fa fa-heart-o action_icon" aria-hidden="true"></i>-->
                 <span class="actiion_name">Wishlist</span>
             </div>
-            <div class="action_container">
+            <a class="action_container" href="Pages/Bag.html">
                 <span class="material-symbols-outlined action_icon">shopping_bag</span>
-                <span class="actiion_name">Bag</span>
-            </div>
+                <span class="action_name">Bag</span>
+                <span class="bag-item-count">0</span>
+            </a>
         </div>
     </header>
     <!--Banner-->
-    <main>
+    <!-- <main>
         <div class="banner_container">
             <img class="banner_image" src="Images/banner.jpg" alt="Main Banner">
         </div>
@@ -128,14 +130,17 @@
             <a href="">
                 <img class="sale_item" src="Images/Categories/10.jpg" alt="">
             </a>
-            <!--<a href="">
+            <a href="">
                 <img class="sale_item" src="Images/Offers/11.png" alt="">
             </a>
             <a href="">
                 <img class="sale_item" src="Images/Offers/12.png" alt="">
-            </a>-->
+            </a
         </div>
-    </main>
+    </main> -->
+    <main>
+        <div class="items-container"></div>
+      </main>
     <!--Footer-->
     <footer>
         <div class="footer_container">
@@ -175,5 +180,8 @@
         <hr>
         <div class="copyright">© 2024 www.myntra.com. All rights reserved.</div>
     </footer>
+    <script src="Data/item.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bag.js"></script>
 </body>
 </html>
